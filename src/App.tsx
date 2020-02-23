@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './components/Header'
 import './App.scss'
 
 const App: React.FC = () => {
@@ -6,9 +7,12 @@ const App: React.FC = () => {
 		'https://cdn.moovin.com.br/project/manager-panel/img/logo-moovin.svg'
 
 	return (
-		<div className='App'>
-			<img alt='Logo da Moovin' src={logoMoovin} />
-		</div>
+
+
+		<Header />
+		// <div className='App'>
+		// 	<img alt='Logo da Moovin' src={logoMoovin} />
+		// </div>
 	)
 }
 
