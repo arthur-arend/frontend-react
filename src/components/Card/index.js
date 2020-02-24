@@ -1,12 +1,18 @@
 import React from 'react';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import './style.scss'
+import './style.scss';
 
 // import { Container } from './styles';
 
 export default function Card(props) {
-  const { posts } = props;
-  const { currentPage } = props;
+  const { posts } = props
+  const { currentPage } = props
+  const { loading } = props
+
+  if(loading) {
+    return <h2>Loading...</h2>
+  }
+
 
   function next(){
     props.changePage(currentPage + 1);
