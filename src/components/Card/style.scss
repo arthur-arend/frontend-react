@@ -13,19 +13,31 @@
 }
 
 .menu-nav{
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  align-items: center;
+  padding-left: 20px;
+  grid-template-columns: 30% 44% 15%;
   background-color: #EFEEEE;
   letter-spacing: 0;
   opacity: 1;
   font-size: 15px;
   font-weight: 700;
   color: #545454;
+
+  .menu-title {
+    
+  }
+
+  .menu-body {
+    
+  }
 }
 
 .list-content{
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  align-items: center;
+  padding-left: 13px;
+  grid-template-columns: 30% 44% 15%;
   background-color: #FFFFFF;
   border: 1px solid #EFEEEE;
   letter-spacing: 0;
@@ -41,7 +53,7 @@
     overflow: hidden;
   }
   .list-title{
-    width: 160px;
+    width: 140px;
     text-overflow:initial;
     word-wrap: break-word;
   }
@@ -53,6 +65,7 @@
 footer{
   display: flex;
   justify-content: space-between;
+  padding-left: 15px;
   background-color: #FFFFFF;
   letter-spacing: 0;
   border: 1px solid #EFEEEE;
@@ -80,6 +93,7 @@ footer{
   }
 
   svg{
+    cursor: pointer;
     width: 30px;
     height: auto;
   }

@@ -20,9 +20,9 @@ export default function Card(props) {
       <h1>Últimas Postagens</h1>
       <ul>
       <nav className="menu-nav">
-        <p>Título</p>
-        <p>Conteudo</p>
-        <p>Data da Publicação</p>
+        <p className="menu-title">Título</p>
+        <p className="menu-body">Conteudo</p>
+        <p className="menu-date">Data da Publicação</p>
       </nav>
         {posts.map(post => (
           <li className="list-content" key={post.id} >
