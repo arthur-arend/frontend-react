@@ -2,6 +2,7 @@
   background-color: #FFFFFF;
   padding: 15px 10px 10px 15px;
   margin: 10px 15px 10px 15px;
+  font: Regular 14px/40px Open Sans;
 
   h1 {
     display: block;
@@ -54,8 +55,7 @@
   }
   .list-title{
     width: 140px;
-    text-overflow:initial;
-    word-wrap: break-word;
+    text-overflow: ellipsis;
   }
   .list-body{
     width: 600px;
@@ -69,8 +69,17 @@ footer{
   background-color: #FFFFFF;
   letter-spacing: 0;
   border: 1px solid #EFEEEE;
-
+  
+  p{
+    color: #2B2B2B;
+    opacity: 1;
+    padding: 0px 5px 0px 5px;
+  }
   .footer-page{
+    text-align: left;
+    font: ExtraBold 15px/40px Open Sans;
+    letter-spacing: 0;
+    font-weight: 900;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,14 +90,12 @@ footer{
       border-radius: 3px;
       opacity: 1;
     }
-    p{
+    .footer-nav {
       text-align: left;
-      font: ExtraBold 15px/40px Open Sans;
+      font: Regular 13px/40px Open Sans;
       letter-spacing: 0;
-      font-weight: 900;
-      color: #2B2B2B;
+      color: #494949;
       opacity: 1;
-      padding: 0px 5px 0px 5px;
     }
   }
 
@@ -96,5 +103,59 @@ footer{
     cursor: pointer;
     width: 30px;
     height: auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  .list-content{
+    display: grid;
+    align-items: center;
+    padding-left: 13px;
+    grid-template-columns: 30% 44% 15%;
+
+    .list-title{
+      width: 100px;
+      text-overflow: ellipsis;
+    }
+    .list-body{
+      width: 400px;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .list-content{
+    display: grid;
+    align-items: center;
+    padding-left: 13px;
+    grid-template-columns: 30% 44% 15%;
+
+    .list-title{
+      width: 100px;
+      text-overflow: ellipsis;
+    }
+    .list-body{
+      width: 250px;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .list-content{
+    display: grid;
+    align-items: center;
+    padding-left: 13px;
+    grid-template-columns: 30% 44% 15%;
+
+    .list-title{
+      width: 80px;
+      text-overflow: ellipsis;
+    }
+    .list-body{
+      width: 150px;
+      text-overflow: ellipsis;
+    }
   }
 }

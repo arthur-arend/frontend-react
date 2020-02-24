@@ -27,7 +27,7 @@ export default function Card(props) {
       <ul>
       <nav className="menu-nav">
         <p className="menu-title">Título</p>
-        <p className="menu-body">Conteudo</p>
+        <p className="menu-body">Conteúdo</p>
         <p className="menu-date">Data da Publicação</p>
       </nav>
         {posts.map(post => (
