@@ -1,0 +1,43 @@
+.nav-content{
+  top: 163px;
+  left: 41px;
+  width: 1838px;
+  height: 47px;
+  background: #F0EFEF 0% 0% no-repeat padding-box;
+  border-radius: 3px 3px 0px 0px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+.card-content{
+
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #EFEEEE;
+  border: 1px solid grey;
+  letter-spacing: 0;
+  color: #2B2B2B;
+  opacity: 1;
+  padding: 20px 30px; 
+
+  p{
+    height: 30px;
+    width: 200px;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .card-title{
+    width: 160px;
+    text-overflow:initial;
+    word-wrap: break-word;
+  }
+  .card-body{
+    width: 600px;
+    text-overflow: ellipsis;
+  }
+}

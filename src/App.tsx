@@ -1,5 +1,6 @@
 import React from 'react'
-import Header from './components/Header'
+
+import Home from './pages/Home'
 import './App.scss'
 
 const App: React.FC = () => {
@@ -9,7 +10,7 @@ const App: React.FC = () => {
 	return (
 
 
-		<Header />
+		<Home />
 		// <div className='App'>
 		// 	<img alt='Logo da Moovin' src={logoMoovin} />
 		// </div>
