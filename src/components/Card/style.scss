@@ -1,27 +1,37 @@
-.nav-content{
-  top: 163px;
-  left: 41px;
-  width: 1838px;
-  height: 47px;
-  background: #F0EFEF 0% 0% no-repeat padding-box;
-  border-radius: 3px 3px 0px 0px;
-  opacity: 1;
-  display: flex;
-  justify-content: space-evenly;
+.card-content{
+  background-color: #FFFFFF;
+  padding: 15px 10px 10px 15px;
+  margin: 10px 15px 10px 15px;
+
+  h1 {
+    display: block;
+    margin: 24px 19px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #494949;
+  }
 }
 
-
-
-.card-content{
-
+.menu-nav{
   display: flex;
   justify-content: space-evenly;
   background-color: #EFEEEE;
-  border: 1px solid grey;
+  letter-spacing: 0;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 700;
+  color: #545454;
+}
+
+.list-content{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFFFFF;
+  border: 1px solid #EFEEEE;
   letter-spacing: 0;
   color: #2B2B2B;
   opacity: 1;
-  padding: 20px 30px; 
+  list-style-type: none;
 
   p{
     height: 30px;
@@ -30,14 +40,47 @@
     white-space: nowrap;
     overflow: hidden;
   }
-
-  .card-title{
+  .list-title{
     width: 160px;
     text-overflow:initial;
     word-wrap: break-word;
   }
-  .card-body{
+  .list-body{
     width: 600px;
     text-overflow: ellipsis;
+  }
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  letter-spacing: 0;
+  border: 1px solid #EFEEEE;
+
+  .footer-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .footer-select{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 2px solid #A3A3A3;
+      border-radius: 3px;
+      opacity: 1;
+    }
+    p{
+      text-align: left;
+      font: ExtraBold 15px/40px Open Sans;
+      letter-spacing: 0;
+      font-weight: 900;
+      color: #2B2B2B;
+      opacity: 1;
+      padding: 0px 5px 0px 5px;
+    }
+  }
+
+  svg{
+    width: 30px;
+    height: auto;
   }
 }
